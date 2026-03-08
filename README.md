@@ -42,7 +42,7 @@ The following **additional** features are implemented:
 Here's a walkthrough of implemented required features:
 
 <!-- <img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /> -->
-[![Video Walkthrough](https://imgur.com/a/PlA3BQH)](./src/assets/ac-flashcards-vid.mov)
+[![Video Walkthrough](https://imgur.com/a/PlA3BQH)](https://imgur.com/a/PlA3BQH)
 
 ## Images
 <img src="./src/assets/example-image1.png" alt="image of animal crossing flashcard"/>
