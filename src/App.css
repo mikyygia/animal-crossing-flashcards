@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100..700&display=swap');
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+  font-family: "M PLUS Code Latin", monospace;
+
+}
+
+body {
+    background-image: url("https://wallpapercave.com/wp/wp7185813.jpg");
+    background-position: center;
+    background-size: cover;
+    color: #4B3720;  
+    overflow: hidden;
+}
+
+div {
+  margin-top: 20px;
+}
+
+.flashcard-container {
+  background-color: #F9BD33;
+  border: 5px solid #4B3720;
+  height: 250px;
+  width: 470px;
+}
+
+.next-flashcard-btn {
+  text-align: right;
+}
+
+button {
+  margin: 0 5px;
+  background-color: #4B3720;
+}
+
+button:hover {
+  background-color: #3c2417;
+  transform: scale(1.05);
+  border: 2px dashed #F9BD33;
+}
+
