@@ -4,7 +4,7 @@ Submitted by: Nhi
 
 This web app: Guess the name of a villager in animal crossing new horizon based on their catchphrase!
 
-Time spent: 2.5 hours spent in total
+Time spent: 4 hours spent in total
 
 ## Required Features
 
@@ -19,16 +19,16 @@ The following **required** functionality is completed:
   - [x] Card set is represented as a list of card pairs (an array of dictionaries where each dictionary contains the question and answer is perfectly fine)
 - [x] **A single card at a time is displayed**
   - [x] Only one half of the information pair is displayed at a time
-- [ ] **Clicking on the card flips the card over, showing the corresponding component of the information pair**
-  - [ ] Clicking on a card flips it over, showing the back with corresponding information 
-  - [ ] Clicking on a flipped card again flips it back, showing the front
-- [ ] **Clicking on the next button displays a random new card**
+- [x] **Clicking on the card flips the card over, showing the corresponding component of the information pair**
+  - [x] Clicking on a card flips it over, showing the back with corresponding information 
+  - [x] Clicking on a flipped card again flips it back, showing the front
+- [x] **Clicking on the next button displays a random new card**
 
 The following **optional** features are implemented:
 
 - [x] Cards contain images in addition to or in place of text
   - [x] Some or all cards have images in place of or in addition to text
-- [ ] Cards have different visual styles such as color based on their category
+- [x] Cards have different visual styles such as color based on their category
   - Example categories you can use:
     - Difficulty: Easy/medium/hard
     - Subject: Biology/Chemistry/Physics/Earth science
@@ -41,22 +41,26 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<!-- <img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /> -->
+[![Video Walkthrough](https://imgur.com/a/PlA3BQH)](./src/assets/ac-flashcards-vid.mov)
 
-<!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
-<!-- Recommended tools:
-[Kap](https://getkap.co/) for macOS
-[ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
+## Images
+<img src="./src/assets/example-image1.png" width="150" height="150" alt="image of animal crossing flashcard"/>
+<img src="./src/assets/example-image2.png" width="150" height="150" alt="image of animal crossing flashcard"/>
+
 
 ## Notes
+- The click card flip effect was the mosty challenging part of this project.
 
-Describe any challenges encountered while building the app.
+#### Visual style based on villager personality type: 
+- Lazy: #DAC8C7 (pink gray)
+- Smug: #F9BD33 (orange-yellow)
+- Jock: #8FD3F0 (light blue)
+- Snooty: #B493BA (dusty lavender)
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright 2026 Nhi
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
