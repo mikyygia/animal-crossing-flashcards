@@ -45,8 +45,8 @@ Here's a walkthrough of implemented required features:
 [![Video Walkthrough](https://imgur.com/a/PlA3BQH)](./src/assets/ac-flashcards-vid.mov)
 
 ## Images
-<img src="./src/assets/example-image1.png" width="150" height="150" alt="image of animal crossing flashcard"/>
-<img src="./src/assets/example-image2.png" width="150" height="150" alt="image of animal crossing flashcard"/>
+<img src="./src/assets/example-image1.png" alt="image of animal crossing flashcard"/>
+<img src="./src/assets/example-image2.png" alt="image of animal crossing flashcard"/>
 
 
 ## Notes
