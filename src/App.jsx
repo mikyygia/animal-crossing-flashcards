@@ -21,7 +21,7 @@ function App() {
 
       <div className="container">
         <div className="misc">
-          <p>card index: {cardIndex}/9</p>
+          <p>card index: {cardIndex}</p>
           <p>seen: {seen+1}</p>
         </div>
         
