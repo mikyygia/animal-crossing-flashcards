@@ -1,16 +1,31 @@
 import { useState } from 'react'
 import './App.css';
 import Villagers from "./components/Villager";
+import GuessBox from './components/GuessBox';
+import data from "./components/Villager-data.jsx";
 
 function App() {
   const [seen, setSeen] = useState(0);
   const [flip, setFlip] = useState(false);
   const [cardIndex, setCardIndex] = useState(0);
+  const [shuffe, setShuffle] = useState(false);
 
-  const randomNumber = () => {
-    const random = Math.floor(Math.random() * 9) + 1;
-    setCardIndex(random);
-  }
+  const currentAnswer = data[cardIndex]?.name ?? "";  // pull answer from data
+
+  const goNext = () => {
+    if (cardIndex < data.length - 1) {
+      setFlip(false);
+      setCardIndex(cardIndex + 1);
+      setSeen(seen + 1);
+    }
+  };
+
+  const goPrev = () => {
+    if (cardIndex > 0) {
+      setFlip(false);
+      setCardIndex(cardIndex - 1);
+    }
+  };
 
   return (
     <>
@@ -19,23 +34,28 @@ function App() {
         <h3>guess the name of the villager by their catchphrase</h3>
       </div>
 
+      <GuessBox answer={currentAnswer} />
+
       <div className="container">
         <div className="misc">
           <p>card index: {cardIndex}</p>
-          <p>seen: {seen+1}</p>
+          <p>seen: {seen + 1}</p>
         </div>
-        
-        <div onClick={() => {setFlip(!flip)}}>
-          <Villagers index={cardIndex} state={flip}/>
+        <div onClick={() => setFlip(!flip)}>
+          <Villagers index={cardIndex} state={flip} />
         </div>
       </div>
 
       <div className="next-flashcard-btn">
-        <button onClick={()=>{setFlip(flip ? !flip : flip); setCardIndex(cardIndex != 0 ? cardIndex - 1: cardIndex)}}>previous</button>
-        <button onClick={()=>{setSeen(seen + 1); setFlip(flip ? !flip : flip); randomNumber()}}>next</button>
+        <button onClick={goPrev} disabled={cardIndex === 0}>
+          previous
+        </button>
+        <button onClick={goNext} disabled={cardIndex === data.length - 1}>
+          next
+        </button>
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
